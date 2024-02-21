@@ -7,5 +7,5 @@ def is_prime(n):
     return True
 
 def filter_prime(numbers):
-    prime_numbers = [num for num in numbers if is_prime(num)]
+    prime_numbers = [filter(lambda num:is_prime(num), numbers)]
     return prime_numbers
